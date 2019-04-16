@@ -8,7 +8,7 @@ This is a simple Python project that can solve relatively easy sudoku puzzles re
 
 sudoku.py is the main sudoku solving backbone. It begins with an initial board state, and for each cell in the board,
 it attempts to whittle down the number of possible values the cell could have until there is only one possibility left.
-Unfortunately, this approach does not work for all sudoku puzzles, so I'll likely hacve to make some revisions to the algorithm, 
+Unfortunately, this approach does not work for all sudoku puzzles, so I'll likely have to make some revisions to the algorithm, 
 like a branching prediction tree, or some other method of inferring cell values.
 
 webCrawl.py uses sudoku.py as a module to solve sudoku puzzles from nine.websudoku.com. It uses a Selenium webdriver to grab the initial board state, solve the puzzle, and then it will write the solution out to the puzzle grid and press the "Finish" button.
